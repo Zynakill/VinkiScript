@@ -6,8 +6,8 @@ export { compile as yopta };
 // Поиск скриптов при работе из браузера
 if (typeof window !== 'undefined') {
     //Получаем йопту из скрипта
-    document.querySelectorAll('[language="YoptaScript"]').forEach(yoptaToJs);
-    document.querySelectorAll('[type="text/x-yoptascript"]').forEach(yoptaToJs);
+    document.querySelectorAll('[language="VinkiScript"]').forEach(yoptaToJs);
+    document.querySelectorAll('[type="text/x-vinkiscript"]').forEach(yoptaToJs);
 }
 
 async function yoptaToJs(scriptNode: Element) {
